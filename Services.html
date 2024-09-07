@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Services.css">
+    <title>Document</title>
+</head>
+<body>
+  <section class="header">  
+    <nav>
+        <div class="nav-title">
+    <ul>
+        <li><a href="Index.html">PELE</a></li>
+    </ul>
+        </div>
+        <div class="nav-links">
+            <ul>    
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="Services.html">SERVICES</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    </section>
+    
+    <div class="mainDiv">
+    <div class="card" onmouseover="talkCarDetailing(this)" onmouseout="introCarDetailing(this)">
+        <div class="card-content">
+          <p class="card-title">Car Detailing
+          </p><p class="card-para" id = "ServiceContent" >Lorem ipsum dolor sit 
+            amet, consectetur adipiscing elit.</p>
+        </div>
+        </div>
+      <div class="card" onmouseover="talkCarDetailing(this)" onmouseout="introCarDetailing(this)">
+        <div class="card-content">
+          <p class="card-title">Car Detailing
+          </p><p class="card-para" id = "ServiceContent" >Lorem ipsum dolor sit 
+            amet, consectetur adipiscing elit.</p>
+        </div>
+        </div>
+      <div class="card" onmouseover="talkCarDetailing(this)" onmouseout="introCarDetailing(this)">
+        <div class="card-content">
+          <p class="card-title">Car Detailing
+          </p><p class="card-para" id = "ServiceContent" >Lorem ipsum dolor sit 
+            amet, consectetur adipiscing elit.</p>
+        </div>
+        </div>
+    </div>
+      <script>
+                function introCarDetailing(obj){
+                document.getElementById("ServiceContent").innerHTML = "We offer Impressive Car Detailing";
+        }
+
+        function talkCarDetailing(obj){
+            document.getElementById("ServiceContent").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+        }
+
+      </script>
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="AllinOne.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pangolin&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- <div class="title">
+            <span id="header">Pele</span>
+             <span id="motto">Up Your Car Game</span>
+           </div> -->
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="">
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                       <!-- <img src="twitter.jpg"><i class="fab fa-twitter-t"></i></img> -->
+                        <!-- <img src="apple.png"><i class="fab fa-facebook-f"></i></img> -->
+                        <img src="Pictures/google.jpg"><i class="fab fa-google-plus-g"></i></img>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <input type="text" placeholder="Name" autofocus />
+                    <input type="tel" placeholder="Phone Number" value="(+971)05" pattern="^\(\+971\)05[0-9]{8}$"  id="phoneInput" required/>
+                    <input type="email" placeholder="Email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"  title="Please enter a valid email address" />
+                    <input type="password" placeholder="Password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Password must be at least 8 characters long and contain at least one letter and one digit"/>
+                    <button>Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <!-- <img src="twitter.jpg" alt=""><i class="fab fa-twitter-t"></i></img> -->
+                        <!-- <img src="apple.png"><i class="fab fa-facebook-f"></i></img> -->
+                        <img src="Pictures/google.jpg" class="social"><i class="fab fa-google-plus-g"></i></img>
+                    </div>
+                    <span>or use your account</span>
+                    <input type="email" placeholder="Email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"  title="Please enter a valid email address" autofocus/>
+                    <input type="password" placeholder="Password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Password must be at least 8 characters long and contain at least one letter and one digit"/>
+                    <a href="#">Forgot your password?</a>
+                    <button>Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Hello Again!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Welcome to <span id="main">PELE!</span> </h1>
+                        <p>Enter your personal details and start your journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+        
+        signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+        });
+        
+        signInButton.addEventListener('click', () => {
+        container.classList.remove("right-panel-active");
+        });
+        </script>
+       
+    </body>
+</html>
